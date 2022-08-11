@@ -1,3 +1,103 @@
+/*
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+*/
+
 * {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #eac926;
+}
+
+.busqueda {
+  margin-left: 20px;
+}
+
+header p {
+  text-align: center;
+}
+
+.logo {
+  max-width: 50%;
+  margin: 30px 0 20px 30px;
+}
+
+.nav {
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.burger-menu i {
+  font-size: 1.5em;
+  background-color: #1259c3;
+  color: white;
+  padding: 12px 15px 12px 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.homeBanner {
+  width: 100%;
+}
+
+.titulares {
+  font-size: 24px;
+}
+
+.precios {
+  font-size: 18px;
+}
+
+.descuentos {
+  font-size: 16px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer section {
+  margin-bottom: 60px;
+}
+
+.footer section p.Descripciones {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer section p {
+  font-size: 12px;
+  margin-bottom: 0px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.footer section i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 20px;
 }
