@@ -99,13 +99,6 @@ header p {
 
 .homeBanner {
   width: 100vw;
-  justify-content: space-around;
-  align-items: flex-end;
-
-  flex-flow: column-wrap
-
-  flex-direction : row-reverse; 
-  justify-content: flex-start
 }
 
 .container {
