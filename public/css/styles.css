@@ -220,6 +220,10 @@ header .hand {
     width: 100vw;
   }
 
+  .top-header{
+    align-items: stretch;
+  }
+
   .descripciones {
     display: none;
   }
@@ -479,7 +483,6 @@ header .hand {
   .container section {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
   }
 
   .wrapper {
