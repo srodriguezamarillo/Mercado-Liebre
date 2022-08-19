@@ -62,8 +62,8 @@ header {
   color: #666;
   border: none;
   outline: none;
-  font-size: 16px; 
-  padding: 2px; 
+  font-size: 16px;
+  padding: 2px;
 }
 
 .top-header .form .submit {
@@ -113,9 +113,8 @@ header p {
   cursor: pointer;
 }
 
-.producto .producto-img{
-  display: flex;
-  justify-content: center;
+.producto .producto-img img {
+  width: 100%;
 }
 
 .contenido-producto {
@@ -141,7 +140,7 @@ header p {
   top: -15px;
 }
 
-.fa-truck:before{
+.fa-truck:before {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -152,7 +151,7 @@ header p {
   text-align: left;
   color: #666;
   margin: 0 auto;
-  padding-top: 25px;
+  padding: 25px 0 25px 0;
 }
 
 .precios {
@@ -169,13 +168,16 @@ header p {
 .descripciones {
   font-size: 16px;
   color: #666;
+  padding: 10px 15px 20px 15px;
+  max-width: 100%;
 }
 
 .footer {
-  text-align: center;
-  padding-top: 60px;
-  background-color: white;
   width: 100vw;
+  background-color: white;
+  padding-top: 60px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .footer section {
@@ -210,7 +212,7 @@ header p {
 
 /* Mobile ancho maximo 479 px */
 @media (max-width: 479px) {
-  header{
+  header {
     width: 100vw;
   }
 
@@ -234,13 +236,77 @@ header p {
   }
 }
 
-/* Desktop ancho mínimo 769 px */
+/* Desktop ancho mínimo 1200 px */
 @media (min-width: 1200px) {
   .container section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+  .form {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .top-header p {
+    width: 30vw;
+    padding: 0;
+    text-align: right;
+  }
+
+  .login li a i {
+    padding-left: 5px;
+  }
+
   .burger-menu {
     display: none;
   }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 30px;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav .site li {
+    padding-left: 30px;
+  }
+
+  .nav .login li {
+    padding-right: 30px;
+  }
+
+  .nav ul li a {
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .container section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .wrapper {
+    width: 20vw;
+  }
+
 }
