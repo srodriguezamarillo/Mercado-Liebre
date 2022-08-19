@@ -49,7 +49,8 @@ header {
 
 .form {
   width: 50%;
-  padding-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: white;
   border-radius: 5px;
   box-sizing: border-box;
@@ -64,19 +65,22 @@ header {
   outline: none;
   font-size: 16px;
   padding: 2px;
+  white-space: nowrap;
+  overflow:hidden;
 }
 
 .top-header .form .submit {
   background-color: #fff;
   color: #666;
   border: none;
-  width: 10%;
-  padding-right: 5px;
+  width: fit-content;
+  padding-left: 5px;
 }
 
-header p {
+header .hand {
   text-align: center;
   padding-top: 30px;
+  width: fit-content;
 }
 
 .section-nav {
@@ -210,8 +214,8 @@ header p {
   margin: 0 auto;
 }
 
-/* Mobile ancho maximo 479 px */
-@media (max-width: 479px) {
+/* Phone : ancho maximo 599 px */
+@media (width <= 599px) {
   header {
     width: 100vw;
   }
@@ -225,8 +229,8 @@ header p {
   }
 }
 
-/* Tablet ancho mínimo 361 px */
-@media (min-width: 480px) {
+/* Small Tablet : ancho de 600 px a 767px */
+@media (600px <= width <= 767px) {
   .container section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -234,10 +238,174 @@ header p {
   .burger-menu {
     display: none;
   }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .top-header .form .input {
+    font-size: 12px;
+  }
+
+  .nav ul li a {
+    font-size: 10px;
+  }
+
+  .logo {
+    width: 27vw;
+    padding-right: 10px;
+  }
+
+  .form {
+    width: 28vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .top-header .hand {
+    padding: 0;
+    font-size: 10px;
+  }
+
+  .login li a i {
+    padding-left: 3px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 18px 15px 18px;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav .site li {
+    padding-left: 12px;
+  }
+
+  .nav .login li {
+    padding-right: 12px;
+  }
+
+  .nav ul li a {
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .container section {
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+  }
+
+  .wrapper {
+    width: 40vw;
+  }
+}
+
+/* Tablet : ancho de 768 px a 899px */
+@media (768px <= width <= 899px) {
+  .container section article {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .burger-menu {
+    display: none;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .top-header .form .input {
+    font-size: 13px;
+  }
+
+  .nav ul li a {
+    font-size: 11px;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+  .form {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+
+  .top-header .hand {
+    padding: 0;
+    font-size: 11px;
+  }
+
+  .login li a i {
+    padding-left: 4px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 25px 20px 25px;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav .site li {
+    padding-left: 15px;
+  }
+
+  .nav .login li {
+    padding-right: 15px;
+  }
+
+  .nav ul li a {
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    text-decoration: none;
+  }
+
+  .container section {
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+  }
+
+  .wrapper {
+    width: 40vw;
+  }
 }
 
 /* Laptop - Desktop : ancho mínimo 900 px */
-@media (min-width: 900px) {
+@media (width >= 900px) {
   .container section article {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
@@ -262,15 +430,14 @@ header p {
   }
 
   .form {
-    width: 30vw;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
+    font-size: 14px;
   }
 
-  .top-header p {
-    width: 30vw;
+  .top-header .hand {
     padding: 0;
-    text-align: right;
     font-size: 12px;
   }
 
@@ -321,7 +488,7 @@ header p {
 }
 
 /* Large Laptop - Desktop : ancho mínimo 1200 px */
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
 
   .top-header .form .input {
     font-size: 16px;
@@ -331,7 +498,11 @@ header p {
     font-size: 14px;
   }
 
-  .top-header p {
+  .form{
+    font-size: 16px;
+  }
+
+  .top-header .hand {
     font-size: 14px;
   }
 
