@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles-forms.css" />
+
     <title>Creá tu usuario - Mercado Liebre</title>
 </head>
 
@@ -53,114 +55,100 @@
     </section>
 
     <main class="container">
-        <section>
-            <form action="#" class="form-container">
+        <form action="#" class="form-container">
+            <div>
                 <div>
-                    <div>
-                        <label for="user-name">
-                            <input type="text" class="input-text" placeholder="Nombre y apellido" name="user-name"
-                                id="user-name" required />
-                        </label>
-                    </div>
-                    <div>
-                        <label for="user">
-                            <input type="text" class="input-text" placeholder="Nombre de usuario" name="user" id="user"
-                                required />
-                        </label>
-                    </div>
-                    <div>
-                        <label for="email">
-                            <input type="email" class="input-email" placeholder="E-mail" name="email" id="email"
-                                required />
-                        </label>
-                    </div>
+                    <label for="user-name"></label>
+                    <input type="text" class="form-input" placeholder="Nombre y apellido" name="user-name"
+                        id="user-name" required />
                 </div>
-                <p>Fecha de nacimiento</p>
                 <div>
-                    <div>
-                        <label for="birthday">
-                            <input type="date" name="bd-date" class="input-date" id="birthday" required />
-                        </label>
-                    </div>
-                    <div>
-                        <label for="adress">
-                            <input type="text" class="input-text" placeholder="Domicilio" name="adress" id="adress" />
-                        </label>
-                    </div>
+                    <label for="user"></label>
+                    <input type="text" class="form-input" placeholder="Nombre de usuario" name="user" id="user"
+                        required />
                 </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" class="form-input" placeholder="E-mail" name="email" id="email" required />
 
-                <p>Perfil del usuario</p>
-                <div class="profile-container">
-                    <div>
-                        <label for="user-profile">
-                            <input type="radio" name="user-profile" id="user-profile" />
-                            Comprador
-                        </label>
-                    </div>
-                    <div>
-                        <label for="user-profile">
-                            <input type="radio" name="user-profile" id="user-profile" />
-                            Vendedor
-                        </label>
-                    </div>
                 </div>
-                <p>Intereses</p>
-                <div class="interest-container">
-                    <div>
-                        <label for="interest">
-                            <input type="checkbox" name="interest" id="interest" /> Electro
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">
-                            <input type="checkbox" name="interest" id="interest" /> Moda
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">
-                            <input type="checkbox" name="interest" id="interest" /> Hogar
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">
-                            <input type="checkbox" name="interest" id="interest" />
-                            Juguetería
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">
-                            <input type="checkbox" name="interest" id="interest" /> Vida
-                            sana
-                        </label>
-                    </div>
+            </div>
+            <p class="form-title">Fecha de nacimiento</p>
+            <div>
+                <div>
+                    <label for="birthday"></label>
+                    <input type="date" name="bd-date" class="form-input" id="birthday" required />
+
                 </div>
                 <div>
-                    <label for="">
-                        <input type="file" accept="mimetype" name="user-photo" />
+                    <label for="adress"></label>
+                    <input type="text" class="form-input" placeholder="Domicilio" name="adress" id="adress" />
+
+                </div>
+            </div>
+
+            <p class="form-title">Perfil del usuario</p>
+            <div class="profile-container">
+                <input type="radio" name="user-profile" id="user-profile" />
+                <label for="user-profile">Comprador</label>
+
+                <input type="radio" name="user-profile" id="user-profile" />
+                <label for="user-profile">Vendedor</label>
+            </div>
+            <p class="form-title">Intereses</p>
+            <div class="interest-container">
+                <div>
+                    <label for="interest">
+                        <input type="checkbox" name="interest" id="interest" /> Electro
                     </label>
                 </div>
                 <div>
-                    <div>
-                        <label for="">
-                            <input type="password" class="input-password" name="password" placeholder="Password"
-                                required />
-                        </label>
-                    </div>
-                    <div>
-                        <label for="">
-                            <input type="password" class="input-password" name="password" placeholder="Confirm password"
-                                required />
-                        </label>
-                    </div>
+                    <label for="">
+                        <input type="checkbox" name="interest" id="interest" /> Moda
+                    </label>
                 </div>
                 <div>
-                    <button type="submit">ENVIAR</button>
+                    <label for="">
+                        <input type="checkbox" name="interest" id="interest" /> Hogar
+                    </label>
                 </div>
                 <div>
-                    <button type="reset">BORRAR</button>
+                    <label for="">
+                        <input type="checkbox" name="interest" id="interest" />
+                        Juguetería
+                    </label>
                 </div>
-            </form>
-        </section>
+                <div>
+                    <label for="">
+                        <input type="checkbox" name="interest" id="interest" /> Vida
+                        sana
+                    </label>
+                </div>
+            </div>
+            <div>
+                <label for="">
+                    <input type="file" accept="mimetype" name="user-photo" />
+                </label>
+            </div>
+            <div>
+                <div>
+                    <label for=""></label>
+                    <input type="password" class="form-input" name="password" placeholder="Password" required />
+                </div>
+                <div>
+                    <label for=""></label>
+                    <input type="password" class="form-input" name="password" placeholder="Confirm password"
+                        required />
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="button">ENVIAR</button>
+            </div>
+            <div>
+                <button type="reset" class="button">BORRAR</button>
+            </div>
+        </form>
+
     </main>
 
     <footer class="footer">
