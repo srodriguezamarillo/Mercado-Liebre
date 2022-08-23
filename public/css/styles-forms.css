@@ -49,7 +49,6 @@ form div {
   border: #1259c3;
   font-size: 15px;
   cursor: pointer;
-  transition: all 450ms;
 }
 
 button:hover {
