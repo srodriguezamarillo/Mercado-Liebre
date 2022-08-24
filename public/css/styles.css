@@ -66,7 +66,7 @@ header {
   font-size: 16px;
   padding: 2px;
   white-space: nowrap;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .top-header .form .submit {
@@ -79,8 +79,8 @@ header {
 
 header .hand {
   width: fit-content;
-  padding-top: 30px;  
-  text-align: center;  
+  padding-top: 30px;
+  text-align: center;
 }
 
 .section-nav {
@@ -101,8 +101,30 @@ header .hand {
   margin-top: 30px;
 }
 
-.homeBanner {
-  width: 100vw;
+.section-banner {
+  width: 100%;
+}
+
+.home-banner{
+  width: 100%;
+  margin: 0 auto;
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.home-banner ul{
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  width: 500%;
+}
+
+.home-banner ul li{
+  list-style: none;
+  width: 100%;
+}
+
+.home-banner ul li img{
+  width: 100%;
 }
 
 .container {
@@ -206,6 +228,12 @@ header .hand {
   font-size: 2em;
   margin-bottom: 10px;
   color: #1259c3;
+  transition: ease-in-out 250ms;
+}
+
+.footer section:hover > i {
+  transform: translateY(-5px) scale(1.25);
+  color : #0022aa;
 }
 
 .copyright {
@@ -222,7 +250,7 @@ header .hand {
     width: 100vw;
   }
 
-  .top-header{
+  .top-header {
     align-items: stretch;
   }
 
@@ -244,7 +272,7 @@ header .hand {
   .burger-menu {
     display: none;
   }
-  
+
   .top-header {
     justify-content: space-between;
     padding-top: 20px;
@@ -308,7 +336,7 @@ header .hand {
 
   .container section {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
@@ -408,20 +436,19 @@ header .hand {
     width: 20vw;
   }
 
-  .footer{
+  .footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .footer section{
+  .footer section {
     width: 33vw;
   }
 }
 
 /* Large Laptop - Desktop : ancho mínimo 1200 px */
 @media (width >= 1200px) {
-
   .top-header .form .input {
     font-size: 16px;
   }
@@ -430,7 +457,7 @@ header .hand {
     font-size: 14px;
   }
 
-  .form{
+  .form {
     font-size: 16px;
   }
 
@@ -449,4 +476,24 @@ header .hand {
   .nav .login li {
     padding-right: 25px;
   }
+}
+
+/* Slide Banner */
+
+@keyframes slide {
+  0% { margin-left: 0%; }
+  17% { margin-left: 0%; }
+
+  23% { margin-left: -100%; }
+  40% { margin-left: -100%; }
+
+  45% { margin-left: -200%; }
+  58% { margin-left: -200%; }
+
+  63% { margin-left: -300%; }
+  80% { margin-left: -300%; }
+
+  85% { margin-left: -400%; }
+  100% { margin-left: -400%; }
+ 
 }

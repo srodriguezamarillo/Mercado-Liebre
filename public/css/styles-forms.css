@@ -50,6 +50,7 @@ form div {
   border-radius: 0.3rem;
   border: #1259c3;
   cursor: pointer;
+  transition: ease-in-out 300ms;
 }
 
 button:hover {
