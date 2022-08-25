@@ -55,8 +55,10 @@ header {
   background-color: white;
   border-radius: 5px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
 }
 
 .top-header .form .input {
@@ -76,6 +78,9 @@ header {
   border: none;
   width: fit-content;
   padding-left: 5px;
+  border-left: #ebebeb 1px solid;
+  display: flex;
+  align-items: center;
 }
 
 header .hand {
@@ -184,8 +189,15 @@ header .hand {
   font-size: 24px;
   text-align: left;
   color: #666;
-  margin: 0 auto;
   padding: 25px 0 25px 0;
+  width: fit-content;
+  display: inline-block;
+}
+
+.container a{
+  text-decoration: none;
+  padding-left: 20px;
+  color: #1259c3;
 }
 
 .precios {
@@ -244,7 +256,7 @@ header .hand {
   transition: ease-in-out 250ms;
 }
 
-.footer section:hover > i {
+.footer div:hover > i {
   transform: translateY(-5px) scale(1.25);
   color: #0022aa;
 }
@@ -258,23 +270,4 @@ header .hand {
   width: 100%;
   padding: 15px 0 25px 5%;
   margin: 0 auto;
-}
-
-/* Phone : ancho maximo 599 px */
-@media (width <= 599px) {
-  header {
-    width: 100vw;
-  }
-
-  .top-header {
-    align-items: stretch;
-  }
-
-  .descripciones {
-    display: none;
-  }
-
-  .nav {
-    display: none;
-  }
 }
