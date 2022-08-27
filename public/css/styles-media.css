@@ -19,13 +19,11 @@
   .nav {
     display: none;
   }
+  
 }
 
 /* Small Tablet : ancho de 600 px a 767px */
 @media (width >= 600px) {
-  .container section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
 
   .burger-menu {
     display: none;
@@ -112,9 +110,6 @@
 
 /* Tablet : ancho de 768 px a 899px */
 @media (768px <= width <= 899px) {
-  .container section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
 
   .top-header .form .input {
     font-size: 13px;
@@ -152,9 +147,6 @@
 
 /* Laptop - Desktop : ancho mínimo 900 px */
 @media (width >= 900px) {
-  .container section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
 
   .top-header .form .input {
     font-size: 14px;
@@ -247,9 +239,7 @@
     font-size: 14px;
   }
 
-  .nav {
-    padding: 30px;
-  }
+  
 
   .nav .site li {
     padding-left: 25px;
@@ -263,12 +253,8 @@
 /* Slide Banner */
 
 @keyframes slide {
-  0% {
-    margin-left: 0%;
-  }
-  17% {
-    margin-left: 0%;
-  }
+  0% { margin-left: 0%; }
+  17% { margin-left: 0%; }
 
   23% {
     margin-left: -100%;
