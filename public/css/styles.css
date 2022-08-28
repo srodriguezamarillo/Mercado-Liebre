@@ -102,6 +102,12 @@ header .hand {
   text-align: center;
 }
 
+.nav{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0 15px;
+}
+
 .section-nav ul {
   list-style: none;
 }
