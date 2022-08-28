@@ -21,15 +21,15 @@ Descripciones: 16px
   padding: 0px;
 }
 
-html{
-  width: 100vw;
+html {
+  min-height: 100%;
+  position: relative;
 }
 
 body {
   background-color: #ebebeb;
   margin: 0 auto;
   width: 100vw;
-  max-width: fit-content;
 }
 
 header {
@@ -44,7 +44,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 20px;
+}
+
+.fa-search:hover{
+  cursor: pointer;
 }
 
 .logo {
@@ -108,8 +112,7 @@ header .hand {
   color: white;
   padding: 14px 15px 14px 15px;
   border-radius: 5px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px 0 20px;
   transition: ease-in-out 250ms;
 }
 
@@ -117,33 +120,24 @@ header .hand {
   background-color: #0022aa;
 }
 
-.section-banner {
-  width: 100%;  
-}
-
 .home-banner {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-  
+  width: 100vw;
+  margin: 0 auto;
+  overflow: hidden; 
 }
 
-.home-banner ul {
-  display: flex;
-  padding: 0;  
+.home-banner figure{
+  position: relative;
   width: 500%;
+  height: 90%;
+  margin: 0;
+  left: 0;
   animation: slide 15s infinite alternate ease-in-out;
 }
 
-.home-banner ul li {
-  list-style: none;
-  width: 100%;
-  
-}
-
-.home-banner ul li img {
-  width: 100%;
-  height: 90%;  
+.home-banner figure img {
+  width: 20%;
+  float: left;  
 }
 
 .container {
@@ -158,13 +152,27 @@ header .hand {
 }
 
 .container section article:hover {
-  box-shadow: 0px 0px 15px rgb(100 100 100 / 60%);
+  box-shadow: 0px 0px 15px rgb(100 100 100 / 60%);  
+}
+
+.container section article:hover > .producto-img > .fa-heart{
+  visibility: visible;
+}
+
+.container section article:hover > .descripciones{
+  display: block;
 }
 
 .producto {
   background-color: white;
   margin: 15px 0;
+  border-radius: 0 0 2% 2%;
   cursor: pointer;
+}
+
+.producto .producto-img{
+  display: flex;
+  position: relative;
 }
 
 .producto .producto-img img {
@@ -192,6 +200,7 @@ header .hand {
   width: 30px;
   right: 20px;
   top: -15px;
+  transition: ease-in-out 500ms;
 }
 
 .fa-truck:before {
@@ -200,6 +209,34 @@ header .hand {
   padding: 5px;
 }
 
+.fa-truck:hover{
+  transform: rotate(-360deg); 
+}
+
+.fa-heart {
+  display: block;
+  position: absolute;
+  color: #578ddf;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 22px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  right: 20px;
+  top: 15px;
+  visibility: hidden;
+}
+
+.fa-heart:before {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.fa-heart:active{
+  color: #1259c3;
+  transform: scale(1.15);
+}
 .titulares {
   font-size: 24px;
   text-align: left;
@@ -231,6 +268,7 @@ header .hand {
   color: #666;
   padding: 10px 15px 20px 15px;
   max-width: 100%;
+  display: none;
 }
 
 .footer {

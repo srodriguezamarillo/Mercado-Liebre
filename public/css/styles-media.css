@@ -1,9 +1,5 @@
 /* Phone : ancho maximo 599 px */
 @media (width <= 599px) {
-  header {
-    width: 100vw;
-  }
-
   .top-header {
     align-items: stretch;
   }
@@ -19,19 +15,16 @@
   .nav {
     display: none;
   }
-  
 }
 
 /* Small Tablet : ancho de 600 px a 767px */
 @media (width >= 600px) {
-
   .burger-menu {
     display: none;
   }
 
   .top-header {
     justify-content: space-between;
-    padding-top: 20px;
   }
 
   .top-header .form .input {
@@ -74,7 +67,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 18px 15px 18px;
+    padding: 30px 18px 15px;
   }
 
   .nav ul {
@@ -110,7 +103,6 @@
 
 /* Tablet : ancho de 768 px a 899px */
 @media (768px <= width <= 899px) {
-
   .top-header .form .input {
     font-size: 13px;
   }
@@ -133,7 +125,7 @@
   }
 
   .nav {
-    padding: 30px 25px 20px 25px;
+    padding: 30px 25px 15px;
   }
 
   .nav .site li {
@@ -147,7 +139,6 @@
 
 /* Laptop - Desktop : ancho mínimo 900 px */
 @media (width >= 900px) {
-
   .top-header .form .input {
     font-size: 14px;
   }
@@ -175,7 +166,7 @@
   }
 
   .nav {
-    padding: 25px 30px 20px 30px;
+    padding: 25px 30px 15px;
   }
 
   .nav .site li {
@@ -239,8 +230,6 @@
     font-size: 14px;
   }
 
-  
-
   .nav .site li {
     padding-left: 25px;
   }
@@ -253,34 +242,38 @@
 /* Slide Banner */
 
 @keyframes slide {
-  0% { margin-left: 0%; }
-  17% { margin-left: 0%; }
-
-  23% {
-    margin-left: -100%;
+  0% {
+    left: 0;
   }
-  40% {
-    margin-left: -100%;
+  16% {
+    left: 0;
   }
 
-  45% {
-    margin-left: -200%;
+  21% {
+    left: -100%;
   }
-  58% {
-    margin-left: -200%;
-  }
-
-  63% {
-    margin-left: -300%;
-  }
-  80% {
-    margin-left: -300%;
+  38% {
+    left: -100%;
   }
 
-  85% {
-    margin-left: -400%;
+  43% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+
+  65% {
+    left: -300%;
+  }
+  82% {
+    left: -300%;
+  }
+  
+  87% {
+    left: -400%;
   }
   100% {
-    margin-left: -400%;
+    left: -400%;
   }
 }
