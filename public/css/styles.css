@@ -155,23 +155,22 @@ header .hand {
 .container section {
 }
 
-.container section article {
+.container section div .producto {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
   transition: ease-in-out 200ms;
 }
 
-.container section article:hover {
-  box-shadow: 0px 0px 15px rgb(100 100 100 / 60%);
+.container section div .producto:hover {
+  box-shadow: 0px 0px 15px rgb(100 100 100 / 60%);  
 }
 
-.container section article:hover > .producto-img > .fa-heart{
+.container section div .producto:hover > .producto-img > .fa-heart{
   visibility: visible;
 }
 
-.container section article:hover > .descripciones{
+.container section div .producto:hover > .descripciones{
   display: block;
 }
-
 
 .producto {
   background-color: white;
