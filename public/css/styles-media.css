@@ -85,7 +85,7 @@
   .nav ul li a {
     display: flex;
     justify-content: space-around;
-    color: #222;
+    color: var(--negroNav);
     text-decoration: none;
   }
 
@@ -189,7 +189,7 @@
 
   .footer section:nth-child(2):before,
   .footer section:nth-child(2):after {
-    background-color: #ebebeb;
+    background-color: var(--grisClaro);
     content: "";
     display: block;
     height: 65px;

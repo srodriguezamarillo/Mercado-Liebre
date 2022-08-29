@@ -1,11 +1,4 @@
 /*
-Paleta de colores
-Amarillo: #EAC926;
-Azul: #03264C;
-Celeste: #1259c3;
-Gris oscuro: #666;
-Gris claro: #ebebeb;
-Verde: #39b54a;
 
 Tamaños Tipográficos
 Cuerpos de texto: 12px
@@ -14,6 +7,21 @@ Precios: 18px
 Descuentos: 16px
 Descripciones: 16px
 */
+
+/* Paleta de colores */
+:root {
+  --blanco: #ffffff;
+  --negroNav: #222222;
+  --amarillo: #fee600;
+  --rojo: #aa0044;
+  --azul: #03264c;
+  --azulClaro: #0022aa;
+  --azulCorazon: #578ddf;
+  --celeste: #1259c3;
+  --grisOscuro: #666;
+  --grisClaro: #ebebeb;
+  --verde: #39b54a;
+}
 
 * {
   font-family: "Roboto", sans-serif;
@@ -27,13 +35,13 @@ html {
 }
 
 body {
-  background-color: #ebebeb;
+  background-color: var(--grisClaro);
   margin: 0 auto;
   width: 100vw;
 }
 
 header {
-  background-color: #fee600;
+  background-color: var(--amarillo);
   width: 100vw;
 }
 
@@ -47,7 +55,7 @@ header {
   padding-top: 20px;
 }
 
-.fa-search:hover{
+.fa-search:hover {
   cursor: pointer;
 }
 
@@ -61,7 +69,7 @@ header {
   width: 50%;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: white;
+  background-color: var(--blanco);
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
@@ -71,8 +79,8 @@ header {
 }
 
 .top-header .form .input {
-  background-color: #fff;
-  color: #666;
+  background-color: var(--blanco);
+  color: var(--grisOscuro);
   border: none;
   outline: none;
   font-size: 16px;
@@ -82,12 +90,12 @@ header {
 }
 
 .top-header .form .submit {
-  background-color: #fff;
-  color: #666;
+  background-color: var(--blanco);
+  color: var(--grisOscuro);
   border: none;
   width: fit-content;
   padding-left: 5px;
-  border-left: #ebebeb 1px solid;
+  border-left: var(--grisClaro) 1px solid;
   display: flex;
   align-items: center;
 }
@@ -102,7 +110,7 @@ header .hand {
   text-align: center;
 }
 
-.nav{
+.nav {
   width: 90%;
   margin: 0 auto;
   padding: 30px 0 15px;
@@ -114,8 +122,8 @@ header .hand {
 
 .burger-menu i {
   font-size: 1.5em;
-  background-color: #1259c3;
-  color: white;
+  background-color: var(--celeste);
+  color: var(--blanco);
   padding: 14px 15px 14px 15px;
   border-radius: 5px;
   margin: 30px 0 20px;
@@ -123,16 +131,16 @@ header .hand {
 }
 
 .burger-menu:hover > i {
-  background-color: #0022aa;
+  background-color: var(--azulClaro);
 }
 
 .home-banner {
   width: 100vw;
   margin: 0 auto;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.home-banner figure{
+.home-banner figure {
   position: relative;
   width: 500%;
   height: 90%;
@@ -143,11 +151,11 @@ header .hand {
 
 .home-banner figure img {
   width: 20%;
-  float: left;  
+  float: left;
 }
 
 .container {
-  background-color: #ebebeb;
+  background-color: var(--grisClaro);
   width: 90vw;
   margin: 0 auto;
 }
@@ -161,25 +169,25 @@ header .hand {
 }
 
 .container section div .producto:hover {
-  box-shadow: 0px 0px 15px rgb(100 100 100 / 60%);  
+  box-shadow: 0px 0px 15px rgb(100 100 100 / 60%);
 }
 
-.container section div .producto:hover > .producto-img > .fa-heart{
+.container section div .producto:hover > .producto-img > .fa-heart {
   visibility: visible;
 }
 
-.container section div .producto:hover > .descripciones{
+.container section div .producto:hover > .descripciones {
   display: block;
 }
 
 .producto {
-  background-color: white;
+  background-color: var(--blanco);
   margin: 15px 0;
   border-radius: 0 0 2% 2%;
   cursor: pointer;
 }
 
-.producto .producto-img{
+.producto .producto-img {
   display: flex;
   position: relative;
 }
@@ -194,14 +202,14 @@ header .hand {
   position: relative;
   justify-content: flex-start;
   padding: 15px;
-  border-top: solid #ebebeb 1px;
+  border-top: solid var(--grisClaro) 1px;
 }
 
 .fa-truck {
   display: block;
   position: absolute;
-  color: #39b54a;
-  border: solid #39b54a 1px;
+  color: var(--verde);
+  border: solid var(--verde) 1px;
   background-color: white;
   font-size: 18px;
   border-radius: 50%;
@@ -218,14 +226,14 @@ header .hand {
   padding: 5px;
 }
 
-.fa-truck:hover{
-  transform: rotate(-360deg); 
+.fa-truck:hover {
+  transform: rotate(-360deg);
 }
 
 .fa-heart {
   display: block;
   position: absolute;
-  color: #578ddf;
+  color: var(--azulCorazon);
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 22px;
   border-radius: 50%;
@@ -242,23 +250,23 @@ header .hand {
   padding: 5px;
 }
 
-.fa-heart:active{
-  color: #1259c3;
+.fa-heart:active {
+  color: var(--celeste);
   transform: scale(1.15);
 }
 .titulares {
   font-size: 24px;
   text-align: left;
-  color: #666;
+  color: var(--grisOscuro);
   padding: 25px 0 25px 0;
   width: fit-content;
   display: inline-block;
 }
 
-.container a{
+.container a {
   text-decoration: none;
   padding-left: 20px;
-  color: #1259c3;
+  color: var(--celeste);
 }
 
 .precios {
@@ -268,13 +276,13 @@ header .hand {
 
 .descuentos {
   font-size: 16px;
-  color: #39b54a;
+  color: var(--verde);
   flex-grow: 0.7;
 }
 
 .descripciones {
   font-size: 16px;
-  color: #666;
+  color: var(--grisOscuro);
   padding: 10px 15px 20px 15px;
   max-width: 100%;
   display: none;
@@ -282,7 +290,7 @@ header .hand {
 
 .footer {
   width: 100vw;
-  background-color: white;
+  background-color: var(--blanco);
   padding-top: 60px;
   margin-top: 60px;
   text-align: center;
@@ -314,20 +322,20 @@ header .hand {
 .footer section i {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #1259c3;
+  color: var(--celeste);
   transition: ease-in-out 250ms;
 }
 
 .footer div:hover > i {
   transform: translateY(-5px) scale(1.25);
-  color: #0022aa;
+  color: var(--azulClaro);
 }
 
 .copyright {
-  border-top: solid #ebebeb 1px;
+  border-top: solid var(--grisClaro) 1px;
   font-size: 12px;
   font-weight: bold;
-  color: #666;
+  color: var(--grisOscuro);
   text-align: left;
   width: 100%;
   padding: 15px 0 25px 5%;

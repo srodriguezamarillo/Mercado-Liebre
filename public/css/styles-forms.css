@@ -7,7 +7,7 @@ body {
 .container {
   width: 80vw;
   margin-top: 60px;
-  background-color: white;
+  background-color: var(--blanco);
   border-radius: 2%;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
 }
@@ -15,7 +15,7 @@ body {
 .container-title {
   width: 70vw;
   font-size: 16px;
-  color: #666;
+  color: var(--grisOscuro);
   padding: 25px 0 0 0;
   margin: 0 auto;
 }
@@ -33,15 +33,15 @@ body {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
-  color: #666;
+  color: var(--grisOscuro);
   box-sizing: border-box;
-  border: 1px #ebebeb solid;
+  border: 1px var(--grisClaro) solid;
   border-radius: 0.3rem;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
 }
 
 .form-input:focus {
-  border-color: #1259c3;
+  border-color: var(--celeste);
   outline: 0;
   box-shadow: 0 0 0 0.075rem rgba(0, 123, 255, 0.25);
 }
@@ -94,12 +94,12 @@ input[type="file"] {
 }
 
 input::file-selector-button {
-  color: white;
+  color: var(--blanco);
   min-height: 1.5rem;
   min-width: 1.5rem;
-  background-color: #1259c3;
+  background-color: var(--celeste);
   border-radius: 0.3rem;
-  border: #1259c3;
+  border: var(--celeste);
   cursor: pointer;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
   padding: 0.75rem;
@@ -108,17 +108,17 @@ input::file-selector-button {
 }
 
 input::file-selector-button:hover {
-  background-color: #0022aa;
+  background-color: var(--azulClaro);
 }
 
 .button {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  background-color: #1259c3;
-  color: white;
+  background-color: var(--celeste);
+  color: var(--blanco);
   border-radius: 0.3rem;
-  border: #1259c3;
+  border: var(--celeste);
   cursor: pointer;
   transition: ease-in-out 300ms;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
@@ -126,18 +126,18 @@ input::file-selector-button:hover {
 
 .send:hover,
 .login-button:hover {
-  background-color: #0022aa;
+  background-color: var(--azulClaro);
 }
 
 .reset:hover {
-  background-color: #aa0044;
+  background-color: var(--rojo);
 }
 
 .create-account {
   font-size: 16px;
   font-weight: bolder;
   text-align: center;
-  color: #1259c3;
+  color: var(--celeste);
   cursor: pointer;
   margin-bottom: 40px;
 }
@@ -146,8 +146,8 @@ input::file-selector-button:hover {
   font-size: 16px;
   font-weight: bolder;
   text-align: center;
-  border-top: 1px #ebebeb solid;
-  color: #1259c3;
+  border-top: 1px var(--grisClaro) solid;
+  color: var(--celeste);
   cursor: pointer;
   margin-bottom: 1.15rem;
   padding: 1.15rem 1.15rem 0 ;
