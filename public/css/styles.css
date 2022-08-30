@@ -338,7 +338,6 @@ header .hand {
   font-weight: bold;
   color: var(--grisOscuro);
   text-align: left;
-  /* width: 100vw; */
   padding: 15px 0 25px 5%;
   margin: 0 auto;
 }
