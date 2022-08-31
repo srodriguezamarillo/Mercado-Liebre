@@ -206,6 +206,10 @@
   .footer section:nth-child(2):before {
     left: 0;
   }
+
+  .copyright {
+    width: 100%;
+  }
 }
 
 /* Large Laptop - Desktop : ancho mínimo 1200 px */

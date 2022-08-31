@@ -227,6 +227,7 @@ header .hand {
 }
 
 .fa-truck:hover {
+  -webkit-transform: rotate(-360deg);
   transform: rotate(-360deg);
 }
 
@@ -252,6 +253,7 @@ header .hand {
 
 .fa-heart:active {
   color: var(--celeste);
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
 }
 .titulares {
@@ -328,6 +330,7 @@ header .hand {
 }
 
 .footer div:hover > i {
+  -webkit-transform: translateY(-5px) scale(1.25);
   transform: translateY(-5px) scale(1.25);
   color: var(--azulClaro);
 }
